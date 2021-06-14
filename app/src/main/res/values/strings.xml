@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">First_Drawer</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_dashboard">Dashboard</string>
+    <string name="menu_Job">Job</string>
+    <string name="menu_setting">Setting</string>
+    <string name="menu_payment">Payment</string>
+    <string name="menu_upload">Upload</string>
+    <string name="profile_head">Take your upload Profile</string>
+    <string name="profile_inst_heading">Customer will use this photo to identify you.Looking friendly makes a good
+        impression.
+    </string>
+    <string name="profile_first_inst">1.Show your whole face and tops of shoulders.</string>
+    <string name="profile_second_instr">2.Take your sunglasses and hat off.</string>
+    <string name="profile_third_instr">3.Take your photo in a well-it place.</string>
+    <string name="dailog_heading">Click Option</string>
+    <string name="profile_inst">Click here to check your and upload the profile pic.</string>
+    <string name="legal_docs">Click here to check and read the agreement.</string>
+    <string name="Drone_detail">Click here to Enter the detail of Drone.</string>
+    <string name="upload_text">Click here to upload the your document. </string>
+    <string name="payment_text">Click here view your payment history</string>
+    <string name="proof_instruction">Licence photo should be clear.Please click the picture in Light.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <array name="DGSA_lst">
+        <item>Yes</item>
+        <item>No</item>
+    </array>
+</resources>

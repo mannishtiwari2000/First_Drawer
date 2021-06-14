@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp">
+
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="150dp"
+                 android:orientation="horizontal"
+                  android:layout_marginTop="30dp"
+                  app:layout_constraintBottom_toBottomOf="parent"
+                  app:layout_constraintEnd_toEndOf="parent"
+                  app:layout_constraintStart_toStartOf="parent"
+                  app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+                android:text="Choose"
+
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:textAlignment="center"
+                android:layout_gravity="center_vertical"
+                android:background="#2196F3"
+                android:backgroundTint="#2196F3"
+
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:textSize="20dp"
+               android:layout_marginTop="40dp"
+                android:textColor="@color/white"
+
+                android:id="@+id/Choose_btn" android:layout_weight="1"
+                android:gravity="center_horizontal"/>
+
+        <TextView
+                android:text="Take picture"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:textAlignment="center"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="center_vertical"
+                android:background="#2196F3"
+                android:layout_marginTop="40dp"
+                android:backgroundTint="#2196F3"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                android:id="@+id/take_photo_btn" android:layout_weight="1"
+                android:gravity="center_horizontal"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

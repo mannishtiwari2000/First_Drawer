@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Proflile_activity">
+
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:id="@+id/logo_layout"
+                  android:layout_marginTop="20dp"
+                  android:layout_marginBottom="10dp"
+                  android:layout_height="150dp">
+
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" app:srcCompat="@drawable/logo" android:id="@+id/imageView3"
+                android:layout_weight="1"/>
+    </LinearLayout>
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="500dp" android:layout_alignParentBottom="true" android:layout_marginBottom="0dp"
+            android:layout_alignParentEnd="true" android:layout_alignParentRight="true"
+            android:layout_marginRight="0dp" android:layout_marginEnd="0dp" android:layout_alignParentStart="true"
+            android:layout_marginLeft="0dp" android:layout_marginStart="0dp" android:layout_alignParentLeft="true"
+            android:layout_below="@+id/logo_layout">
+
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="500dp"
+                        android:layout_margin="10dp"
+                        android:layout_below="@id/logo_layout"
+                        app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0" app:layout_constraintVertical_bias="1.0"
+                        android:id="@+id/relativeLayout">
+
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="200dp"
+                          android:id="@+id/instruction_section"
+
+                          android:orientation="vertical" android:layout_alignParentEnd="true"
+                          android:layout_alignParentRight="true" android:layout_marginRight="0dp"
+                          android:layout_marginEnd="10dp" android:layout_alignParentStart="true"
+                          android:layout_marginLeft="10dp" android:layout_marginStart="0dp"
+                          android:layout_alignParentLeft="true" android:layout_marginTop="0dp"
+                          android:layout_alignParentTop="true">
+
+
+                <TextView
+                        android:text="@string/profile_head"
+                        android:textSize="25dp"
+
+                        android:layout_margin="5dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:fontFamily="sans-serif-black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:id="@+id/textView2"
+                        android:gravity="center_horizontal"/>
+                <TextView
+                        android:text="@string/profile_inst_heading"
+                        android:layout_width="match_parent"
+                        android:justificationMode="inter_word"
+                        android:textColor="#454444"
+                        android:layout_margin="5dp"
+                        android:layout_height="wrap_content" android:id="@+id/textView3"/>
+                <TextView
+                        android:text="@string/profile_first_inst"
+                        android:layout_marginTop="15dp"
+                        android:layout_width="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:justificationMode="inter_word"
+                        android:layout_height="wrap_content" android:id="@+id/textView4"/>
+                <TextView
+                        android:text="@string/profile_second_instr"
+                        android:layout_width="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:justificationMode="inter_word"
+                        android:layout_height="wrap_content" android:id="@+id/textView5"/>
+                <TextView
+                        android:text="@string/profile_third_instr"
+                        android:layout_width="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:justificationMode="inter_word"
+                        android:layout_height="wrap_content" android:id="@+id/textView6"/>
+
+            </LinearLayout>
+            <LinearLayout
+                    android:layout_below="@id/instruction_section"
+                    android:orientation="vertical"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:layout_marginRight="10dp">
+
+                <com.comix.rounded.RoundedCornerImageView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/upload_image_profile"
+
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="16dp"
+                        android:src="@drawable/justin"
+                        android:scaleType="fitXY"
+                        app:cornerBottomDisable="false"
+                        app:cornerLeftDisable="false"
+                        app:cornerRightDisable="false"
+                        app:cornerTopDisable="false"
+                        app:cornerColor="@android:color/white"
+                        app:cornerRadius="30dp"
+                />
+                <TextView
+                        android:text="Take Photo"
+                        android:background="#2196F3"
+                        android:visibility="visible"
+                        android:backgroundTint="#2196F3"
+                        android:textSize="20dp"
+                        android:textColor="@color/white"
+                        android:textAlignment="center"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:id="@+id/photo_profile_option" android:gravity="center_horizontal"/>
+                <TextView
+                        android:text="@string/menu_upload"
+                        android:background="#2196F3"
+                        android:backgroundTint="#2196F3"
+                        android:visibility="gone"
+                        android:textSize="20dp"
+                        android:textColor="@color/white"
+                        android:textAlignment="center"
+
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:id="@+id/photo_profile_upload"
+                        android:gravity="center_horizontal"/>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/mobile_navigation"
+            app:startDestination="@+id/nav_dashboard">
+
+    <fragment
+            android:id="@+id/nav_dashboard"
+            android:name="com.example.first_drawer.ui.home.DashboardFragment"
+            android:label="@string/menu_dashboard"
+            tools:layout="@layout/frament_dashboard">
+        <action android:id="@+id/action_nav_dashboard_to_nav_job" app:destination="@id/nav_job"/>
+    </fragment>
+
+    <fragment
+            android:id="@+id/nav_job"
+            android:name="com.example.first_drawer.ui.gallery.jobFragment"
+            android:label="@string/menu_Job"
+            tools:layout="@layout/fragment_job">
+        <action android:id="@+id/action_nav_job_to_nav_payment" app:destination="@id/nav_payment"/>
+    </fragment>
+
+    <fragment
+            android:id="@+id/nav_payment"
+            android:name="com.example.first_drawer.ui.slideshow.paymentFragment"
+            android:label="@string/menu_payment"
+            tools:layout="@layout/fragment_payment">
+        <action android:id="@+id/action_nav_payment_to_nav_setting" app:destination="@id/nav_setting"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_setting"
+        android:name="com.example.first_drawer.SettinghFragment"
+        android:label="@string/menu_setting"
+        tools:layout="@layout/fragment_settingh">
+        <action android:id="@+id/action_nav_setting_to_nav_dashboard" app:destination="@id/nav_dashboard"/>
+    </fragment>
+
+<fragment
+    android:id="@+id/nav_upload"
+    android:name="com.example.first_drawer.UploadFragment"
+    tools:layout="@layout/fragment_upload"
+    android:label="@string/menu_upload"/>
+</navigation>

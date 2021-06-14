@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:background="#041829"
+        android:layout_height="match_parent"
+        tools:context=".Document_upload">
+
+    <RelativeLayout
+            android:background="@drawable/dotted_border"
+
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/main_section"
+            android:layout_marginTop="150dp"
+            android:layout_marginRight="20dp"
+            android:layout_height="wrap_content" android:layout_alignParentTop="true">
+
+
+        <ImageView
+                android:id="@+id/logo_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:layout_marginTop="20dp"
+                app:srcCompat="@drawable/docs_legal"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="10dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"/>
+        <TextView
+                android:text="You need to upload your ID proof "
+                android:textColor="@color/white"
+                android:textAlignment="center"
+                android:textSize="15dp"
+                android:layout_below="@id/logo_icon"
+                android:layout_width="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/instruction"
+                android:gravity="center_horizontal"/>
+        <TextView
+                android:text="Click me to upload "
+                android:layout_below="@id/instruction"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:textSize="25dp"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content"
+                android:id="@+id/Proof_name" android:gravity="center_horizontal"/>
+        <TextView
+                android:text="@string/proof_instruction"
+                android:layout_below="@id/Proof_name"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:justificationMode="inter_word"
+                android:textColor="@color/white"
+                android:textAlignment="center"
+                android:layout_marginBottom="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/textView27" android:gravity="center_horizontal"/>
+    </RelativeLayout>
+    <Button
+            android:text="Button"
+            android:layout_width="match_parent"
+            android:background="@drawable/button_rounded"
+            android:backgroundTint="#FF9800"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/main_section"
+            android:layout_margin="50dp"
+            android:id="@+id/button"/>
+
+
+</RelativeLayout>
